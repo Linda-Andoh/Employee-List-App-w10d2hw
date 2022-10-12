@@ -1,16 +1,19 @@
-import EmployeeList from "./EmployeeList"
 import Header from "./Header"
 import SearchBar from "./SearchBar"
-import EmployeeListItems from "./EmployeeListItems"
+import EmployeeList from "./EmployeeList"
+import EmployeePage from "./EmployeePage"
 
 const Homepage = (props) => {
     return (
     <>
-        <div className="section">
+        <div class="section" id="left">
             <Header />
             <SearchBar />
             <EmployeeList />
         </div>
+         <div class="section" id="right">
+            <EmployeePage />
+         </div>
     </>
   )
 }

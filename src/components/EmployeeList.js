@@ -1,16 +1,24 @@
+import React from "react";
 import EmployeeListItem from "./EmployeeListItems"
+import data from "../data";
 
-const EmployeeList = (props) => {
+
+
+const EmployeeList = data.map((employee) => {
   return (
-    <>
-        <EmployeeListItem />
-        <EmployeeListItem />
-        <EmployeeListItem />
-        <EmployeeListItem />
-        <EmployeeListItem />
-    
-    </>
+    <div className="list">
+     <EmployeeListItem
+         key={employee.id}
+         image={employee.image}
+         name={employee.name}
+         dept={employee.department}
+         email={employee.email}
+         phone={employee.phone}
+     />
+    </div>
   )
-}
+});
 
-export default EmployeeList
+
+    return <div className="employeeList">{employees}</div>
+  
