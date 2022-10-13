@@ -1,24 +1,31 @@
 import React from "react";
-import EmployeeListItem from "./EmployeeListItems"
 import data from "../data";
+import EmployeeListItems from "./EmployeeListItems";
+import EmployeePage from "./EmployeePage"
 
+console.log(data);
 
-
-const EmployeeList = data.map((employee) => {
+const employees = data.map((employee, index) => {
   return (
-    <div className="list">
-     <EmployeeListItem
-         key={employee.id}
-         image={employee.image}
+    <div> 
+     <div className="list">
+      <EmployeeListItems
+         key={index}
+          image={employee.image}
          name={employee.name}
          dept={employee.department}
-         email={employee.email}
-         phone={employee.phone}
      />
+     <EmployeePage />
+     </div>
     </div>
   )
-});
+  });
 
-
-    return <div className="employeeList">{employees}</div>
   
+export default function EmployeeList() {
+  return (
+    <div>
+      {employees}
+    </div>
+  )
+}

@@ -1,23 +1,22 @@
 import React from "react";
-import images from "../components/images";
 
-const EmployeeListItem = () => {
+export default function EmployeeListItems (props) {
     return (
       <>
-        <div className="md:flex bg-white shadow text-gray-800 my-4 py-4 px-10 rounded-md items-center justify-between hover:bg-gray-300">
-            <img
-                style={{ maxWidth: "60px"}}
-                className="rounded-full shadow-md border border-gray-300"
-                src={images}
-                alt="employee"
-            />
-            <p className="font-bold text-md">{name}</p>
-            <p>{dept}</p>
-            <p className="text-blue-500">{email}</p>
-            <p>{phone}</p>
-        </div>
-    </>
-    )
-}
+       
+        <div className="table-responsive">
+            <table className="table">
+                <tbody>
+                    <tr>
+                        <th scope="row">{props.id}</th>
+                        <img src={props.image}></img>
+                        <td>{props.name}</td>
+                        <td>{props.department}</td>
 
-export default EmployeeListItem;
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </>
+    )
+  }

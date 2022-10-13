@@ -1,21 +1,32 @@
+.App {
+  display: contents ;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 50px;
+  gap: 24px;
+  grid-row-gap: 2rem;
+  grid-column-gap: 5px;
+
+} 
+
 body {
-  background-color: blue;
-  max-width: 800px;
-  margin: auto;
+  background-color: rgba(245, 245, 245, 0.64);
+  max-width: fit-content;
+  margin-left: 10% ;
+  margin-right: 10%;
 }
 
 header {
-  background-color:rgb(21, 110, 199);
+  background-color:rgb(21, 190, 199);
   color: white;
-  border-bottom: 5px solid rgb(16, 69, 112);
-  padding: 25px;
+  border-top-style: groove ;
+  padding: 80px;
 }
 
 .section {
   border: 3px solid white;
 }
 
-#employeeCard {
+/* #employeeCard {
   display: grid;
   grid-template-columns: .5fr 1fr;
   grid-template-rows: 1fr;
@@ -23,63 +34,58 @@ header {
   grid-row-gap: 0px;
   text-align: left;
   padding: 1rem;
-  }
+  } */
   
-  .employeeName {
-    grid-area: 1 / 2 / 2 / 3;
-    font-weight: bold;
-  }
-  
-  .employeePicture {
+   /* .employeePicture {
     grid-area: 1 / 1 / 3 / 2;
     padding-left: 1rem;
-  }
+  }  */
   
-  .employeeDetails {
+   /* .employeeDetails {
     grid-area: 2 / 2 / 3 / 3;
-  }
+  }  */
 
-  #searchBar {
+   /* #searchBar {
     padding: .2rem;
     background-color: whitesmoke;
-  }
+  } 
 
-  #searchBarField {
-      width: 60vw;
+  .searchBarField {
+      width: 5vw;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
       grid-row-gap: 2rem;
-      grid-column-gap: 40px;
+      grid-column-gap: 5px;
     }
   
     input{
-      width: 100%;
-      background: burlywood;
+      width: 25%;
+      background: rgb(209, 135, 222);
       font-size: 1rem;
       border-radius: 1rem;
-    }
+    } */
 
-#Homepage {
+ /* #Homepage {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-} 
+}   */
 
-#EmployeeListItems {
+/* #EmployeeListItems {
     width: 55%;
     overflow: auto;
     background-color: rgb(184, 206, 255);
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-  }
+  } */
 
-  #images {
+  /* #images {
     width: 20%;
-  }
+  } */
 
-  #EmployeePage {
+   /* #EmployeePage {
     width: 45%;
     height: 100vh;
     background-color: blueviolet;
@@ -87,19 +93,19 @@ header {
   .title{
     font-size: 2rem;
     display: flex;
-}
+} */
 
-  #empPageHeader {
+  /* #empPageHeader {
     display: inline-flex;
     justify-content: space-evenly;
     align-items: stretch;
 
-  }
+  } */
 
-  #backBtn {
+  /* #backBtn {
     margin: 1.5rem;
     padding: .25rem;
     height: 2rem;
     float: right;
-  }
+  }  */
 

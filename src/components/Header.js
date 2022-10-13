@@ -2,12 +2,19 @@ import React from 'react';
 
 const Header = () => {
     return(
-        <div className="bg-white shadow text-gray-800">
+     <>
+        <div>
          <header>
-            <h1 className="flex items-center">Employee Directory</h1>
-        
+            <h1>Employee Directory</h1>
          </header>
         </div>
+
+         <div>
+          <header>
+             <h2>Employee</h2>
+          </header>
+         </div>
+      </>
     );
 };
 
