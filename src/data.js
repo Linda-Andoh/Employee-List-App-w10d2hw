@@ -8,30 +8,30 @@ import imageFive from "./components/images/five.jpg"
 export default [
     {
   
-        "name": "James",
+        "name": "James Lee",
         "image": imageOne,
         "department": "President and CEO",
       },
       {
   
-        "name": "Samuel",
+        "name": "Samuel Jones",
         "image": imageTwo,
         "department": "VP of Marketing",
       },
       {
 
-        "name": "Rose",
+        "name": "Rose Williams",
         "image": imageThree,
         "department": "CFO",
       },
       {
   
-        "name": "Dexter",
+        "name": "Dexter King",
         "image": imageFour,
         "department": "VP of Engineering",
       },
       {
-        "name": "Peter",
+        "name": "Peter Moore",
         "image": imageFive,
         "department": "VP of Sales"
       },

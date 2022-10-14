@@ -1,7 +1,6 @@
-import React from "react";
+// import React from "react";
 import data from "../data";
 import EmployeeListItems from "./EmployeeListItems";
-import EmployeePage from "./EmployeePage"
 
 console.log(data);
 
@@ -13,11 +12,10 @@ const employees = data.map((employee, index) => {
          key={index}
           image={employee.image}
          name={employee.name}
-         dept={employee.department}
+         department={employee.department}
      />
-     <EmployeePage />
      </div>
-    </div>
+     </div>
   )
   });
 

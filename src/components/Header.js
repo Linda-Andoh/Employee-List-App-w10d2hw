@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     return(
      <>
         <div>
@@ -8,12 +8,6 @@ const Header = () => {
             <h1>Employee Directory</h1>
          </header>
         </div>
-
-         <div>
-          <header>
-             <h2>Employee</h2>
-          </header>
-         </div>
       </>
     );
 };

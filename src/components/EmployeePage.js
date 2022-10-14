@@ -1,21 +1,15 @@
  import React from "react";
+ import { Link } from "react-router-dom";
+ import Employee from "./Employee";
 
-export default function EmployeePage (props) {
-    return (
-      <>
-       
-        <div className="table-responsive">
-            <table className="table">
-                <tbody>
-                    <tr>
-                    <th scope="column">{props.id}</th>
-                        <img src={props.image}></img>
-                        <td>{props.name}</td>
-                        <td>{props.department}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-      </>
-    )
-  }
+ export default function EmployeePage (props) {
+  return (
+    <>
+      <div id="empPageHeader">
+        <Link to="/"><button id="backBtn">Back</button></Link>
+      <h2>Employee Page</h2>
+      </div>
+      <Employee />
+    </>
+  )
+}
